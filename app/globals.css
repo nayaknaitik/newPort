@@ -15,12 +15,61 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #f3f3f3;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-plus-jakarta), Arial, Helvetica, sans-serif;
+}
+
+/* -------------------------------------------------------- */
+/* ✅ Locomotive Scroll Setup (FIXED)                       */
+/* -------------------------------------------------------- */
+
+@import "locomotive-scroll/dist/locomotive-scroll.css";
+
+/* CRITICAL FIX: Remove height: 100% constraint */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Let the container grow with content */
+[data-scroll-container] {
+  overflow: hidden; /* Locomotive will handle scrolling */
+  width: 100%;
+  /* DO NOT SET height: 100% - let content determine height */
+}
+
+/* Smooth scrolling fallback */
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  [data-scroll-container] {
+    overflow: auto !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Optional: Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #f3f3f3;
+  border-radius: 4px;
 }
