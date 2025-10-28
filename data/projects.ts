@@ -3,7 +3,17 @@ import Port from '../public/Port.png'
 import sign from '../public/Sign.png'
 import flora from '../public/Flora.png'
 import Quit from '../public/Quit.png'
+import exCuse from '../public/Excuse.png'
 export const projects = [
+  {
+    id: 4,
+    title: "ExcuseMaster",
+    description:
+      "A secure authentication service built with Node.js, Express.js, and MongoDB using JWT and refresh tokens.",
+    image: exCuse,
+    liveUrl: "https://your-live-demo-link.com",
+    codeUrl: "https://github.com/nayaknaitik/ExcuseAgent",
+  },
   {
     id: 1,
     title: "Quit Tobacco Full Stack",
