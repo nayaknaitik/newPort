@@ -4,6 +4,7 @@ import sign from '../public/Sign.png'
 import flora from '../public/Flora.png'
 import Quit from '../public/Quit.png'
 import exCuse from '../public/Excuse.png'
+import slot from '../public/slot.png';
 export const projects = [
   {
     id: 4,
@@ -40,5 +41,14 @@ export const projects = [
     image: sign,
     liveUrl: "https://your-live-demo-link.com",
     codeUrl: "https://github.com/nayaknaitik/SignatureStyles",
+  },
+  {
+    id: 5,
+    title: "SlotSwapper",
+    description:
+      "My personal Fashion Clothing website built with Next.js, GSAP animations, and modern design principles.",
+    image: slot,
+    liveUrl: "https://your-live-demo-link.com",
+    codeUrl: "https://github.com/nayaknaitik/slotSwapper-project-ServiceHive",
   },
 ];
