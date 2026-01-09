@@ -1,54 +1,67 @@
-import Gemini from '../public/Gemini.png'
-import Port from '../public/Port.png'
-import sign from '../public/Sign.png'
-import flora from '../public/Flora.png'
-import Quit from '../public/Quit.png'
-import exCuse from '../public/Excuse.png'
-import slot from '../public/slot.png';
+import docMaintain from "../public/CursorBackend.png";
+import tagore from "../public/tagore.jpeg";
+import slot from "../public/slot.png";
+import icancare from "../public/ican.png";
+
 export const projects = [
   {
     id: 4,
-    title: "ExcuseMaster",
+    title: "iCanCare — Healthcare Platform (Internship Project)",
+    date: "Apr–Sep 2025",
     description:
-      "A secure authentication service built with Node.js, Express.js, and MongoDB using JWT and refresh tokens.",
-    image: exCuse,
-    liveUrl: "https://your-live-demo-link.com",
-    codeUrl: "https://github.com/nayaknaitik/ExcuseAgent",
+      "Production healthcare platform built end-to-end during internship, serving real users at scale.",
+    highlights: [
+      "Full-stack development using Next.js, TypeScript, Prisma, and MySQL",
+      "Admin panels with role-based access control",
+      "AWS deployment with integrated payment gateway",
+    ],
+    image: icancare,
+    liveUrl: "https://icancare.com",
   },
   {
     id: 1,
-    title: "Quit Tobacco Full Stack",
+    title: "DocMaintain — Documentation Indexing Backend",
+    date: "Dec 2025",
     description:
-      "A secure authentication service built with Node.js, Express.js, and MongoDB using JWT and refresh tokens.",
-    image: Quit,
-    liveUrl: "https://your-live-demo-link.com",
-    codeUrl: "https://quittobacco.icancare.com",
+      "Backend system for ingesting, indexing, and semantically retrieving large documentation and codebases.",
+    highlights: [
+      "Incremental ingestion and vector indexing pipeline",
+      "Semantic retrieval APIs with metadata filtering",
+      "Scalable backend architecture for IDE integration",
+    ],
+    image: docMaintain,
+    github: "https://github.com/nayaknaitik/Cursor-LikeBackendSystem",
   },
+  
   {
     id: 2,
-    title: "FloraMart",
+    title: "TagoreNess — Emotionally-Aware RAG System",
+    date: "Nov 2025",
     description:
-      "An AI text generation frontend integrating the Google Gemini API with a sleek modern design.",
-    image: flora,
-    liveUrl: "https://your-live-demo-link.com",
-    codeUrl: "https://github.com/nayaknaitik/FloraMart",
+      "Retrieval-Augmented Generation system delivering context-aware responses grounded in curated literary sources.",
+    highlights: [
+      "End-to-end RAG pipeline using FastAPI and FAISS",
+      "Hybrid semantic + metadata-based retrieval",
+      "Citation-grounded response generation",
+    ],
+    image: tagore,
+    github:
+      "https://github.com/nayaknaitik/tagoreNess-ChatBotAgent-Backend-v1-fastAPI",
   },
   {
     id: 3,
-    title: "Signature Styles",
+    title: "SlotSwapper — Peer-to-Peer Time Slot Exchange Platform",
+    date: "Oct 2025",
     description:
-      "My personal Fashion Clothing website built with Next.js, GSAP animations, and modern design principles.",
-    image: sign,
-    liveUrl: "https://your-live-demo-link.com",
-    codeUrl: "https://github.com/nayaknaitik/SignatureStyles",
-  },
-  {
-    id: 5,
-    title: "SlotSwapper",
-    description:
-      "My personal Fashion Clothing website built with Next.js, GSAP animations, and modern design principles.",
+      "Full-stack scheduling platform enabling users to exchange calendar slots through secure workflows.",
+    highlights: [
+      "JWT-secured APIs with transactional handling",
+      "PostgreSQL-backed data modeling with Prisma",
+      "Containerized deployment using Docker Compose",
+    ],
     image: slot,
-    liveUrl: "https://your-live-demo-link.com",
-    codeUrl: "https://github.com/nayaknaitik/slotSwapper-project-ServiceHive",
+    github:
+      "https://github.com/nayaknaitik/slotSwapper-project-ServiceHive",
   },
+  
 ];
