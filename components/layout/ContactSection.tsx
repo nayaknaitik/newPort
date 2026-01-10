@@ -22,7 +22,7 @@ export default function ContactSection() {
     {
       id: "resume",
       label: "Resume",
-      href: "https://drive.google.com/file/d/1I5aUSU-0s5yklKXufMKv9f0G9ncciOP6/view?usp=drive_link",
+      href: "https://drive.google.com/file/d/14hAms8GzyJZcSsYn5RcFji8FUm-MBuke/view?usp=sharing",
       icon: <HiOutlineDocument className="w-5 h-5" />,
     },
     {
