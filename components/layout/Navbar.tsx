@@ -48,7 +48,7 @@ export default function Navbar() {
           ref={nameRef}
           className="text-3xl mx-auto md:text-4xl font-bold tracking-tight text-white"
         >
-          Naitik Nayak
+          Naitik Kumar Nayak
         </h1>
       </div>
     </div>
